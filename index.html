@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item">Store</li>
+                <li class="menu__item">Followers</li>
+                <li class="menu__item">Following</li>
+                <li class="menu__item">Seller Feedback</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="feadback your-feadback">
+            <h1 class="feadback__titel">Your feedback</h1>
+            <div class="comment">
+                <div class="icon"></div>
+                <h2 class="comment__username">Nad*****hda</h2>
+                <div class="like">
+                    <img src="/img/like.svg" alt="">
+                    <img src="/img/like.svg" alt="">
+                    <img src="/img/like.svg" alt="">
+                    <img src="/img/like1.svg" alt="">
+                    <img src="/img/like1.svg" alt="">
+                </div>
+            </div>
+            <textarea name="your-comment" class="your-comment" placeholder="Your comment"></textarea>
+        </section>
+        <section class="feadback">
+            <h1 class="feadback__titel">All feedbacks</h1>
+            <div class="wrapperComment" onmouseover="changeReplies(0)" onmouseout="rechangeReplies(0)">
+                <div class="comment">
+                    <div class="icon"></div>
+                    <h2 class="comment__username">Arn*****old</h2>
+                    <div class="like">
+                        <img src="/img/like.svg" alt="">
+                        <img src="/img/like.svg" alt="">
+                        <img src="/img/like.svg" alt="">
+                    </div>
+                </div>
+                <p class="comment__text">fskjfgklgjk dfjg kmjskfjsghfsg v kjskgjsdkghdk snvkx ljskjgfksvk xvfskjfgklgjk
+                    dfjg kmjskfjsghfsg vkjskgjsdkghdk snvkx ljskjgfksvk xvfskjfgklgjk dfjg kmjskfjsghfsg v
+                    kjskgjsdkghdk
+                    snvkx ljskjgfksvk
+                    xvfskjfgklgjk dfjg kmjskfjsghfsg v kjskgjsdkghdk snvkx ljskjgfksvk xvfskjfgklgjk dfjg kmjskfjsghfsg
+                    v
+                    kjskgjsdkghdk snvkx ljskjgfksvk xv</p>
+                <p class="comment__like">Like</p>
+                <p class="comment__reply" onclick="addReply(0)">Reply</p>
+                <p class="comment__time">2 days ago</p>
+            </div>
+            <div class="wrapperComment" onmouseover="changeReplies(1)" onmouseout="rechangeReplies(1)">
+                <div class="comment">
+                    <div class="icon"></div>
+                    <h2 class="comment__username">Nad*****hda</h2>
+                    <div class="like">
+                        <img src="/img/like.svg" alt="">
+                        <img src="/img/like.svg" alt="">
+                        <img src="/img/like.svg" alt="">
+                        <img src="/img/like1.svg" alt="">
+                        <img src="/img/like1.svg" alt="">
+                    </div>
+                    <p class="comment__edit">Edit</p>
+                    <p class="comment__delete">Delete</p>
+                </div>
+                <p class="comment__text"><span class="comment__text_green">My comment </span>dfjg kmjskfjsghfsg v
+                    kjskgjsdkghdk snvkx ljskjgfksvk xvfskjfgklgjk
+                    dfjg kmjs kfjsghfsg v kjskgjsdkghdk snvkx ljskjgfksvk xvfskjfgklgjk dfjg kmjskfjsghfsg v kjsk gjs
+                    dkghdk snvkx ljskjgfksvk xvfskjfgklgjk dfjg kmjskfjsghfsg v kjskgjsdkghdk snvkx ljs kjg fk svk
+                    xvfskjfgklgjk dfjg kmjskfjsghfsg v kjskgjsdkghdk snvkx ljskjgfksvk xv</p>
+                <p class="comment__like">Like</p>
+                <p class="comment__reply" onclick="addReply(1)">Reply</p>
+                <p class="comment__time">56 min</p>
+            </div>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+
+</html>
